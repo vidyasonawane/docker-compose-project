@@ -35,3 +35,5 @@ _(NOTE: we can store this number of visits inside the node application itself. T
 
   The purpose of Docker compose is to essentially function as Docker CLI but allow you to issue multiple commands much more quickly.
 
+  Bu using docker compose, Containers have free access to each other and can exchange as much information as they want without having to exchange or open up any ports between the two.
+
