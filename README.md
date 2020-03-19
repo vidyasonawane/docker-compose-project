@@ -21,4 +21,17 @@ _(NOTE: we can store this number of visits inside the node application itself. T
   
   the issue with this approach is that, all the redis servers in different containers will be completely disconnected from each other. And so one server may store the number as 99, some other radis instance in another container might think that its only been visited three times. So in general we would definitely not want to create multiple instances of redis for a single app.
   
-    Instead, we will have one single instance of redis and then if we need to scale up the web application, we could just scale the node server and make additional instances of the notes server. We are going to have separate docker containers for both the node application and the redis server.
+  Instead, we will have one single instance of redis and then if we need to scale up the web application, we could just scale the node server and make additional instances of the notes server. We are going to have separate docker containers for both the node application and the redis server.
+
+
+### Docker Compose
+  A separate CLI that gets installed along with docker.
+  
+  __What docker composed does and what Docker CLI does and what the relationship between the two?__
+    
+  the purposes of Docker compose is to avoid writing all the tiny little options every time you want to start up a container.
+
+  Docker compose makes it very easy and very straightforward to start up multiple docker containers at the same time and automatically connect them together with some form of networking. it's all going to happen behind the scenes for us quite automatically.
+
+  The purpose of Docker compose is to essentially function as Docker CLI but allow you to issue multiple commands much more quickly.
+
