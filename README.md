@@ -39,10 +39,12 @@ _(NOTE: we can store this number of visits inside the node application itself. T
 
 * To build and run the container using docker compose, use
   `docker-compose up`
+* To see the status of containers written in docker-compose.yml, run `docker-compose ps` (NOTE: run this command only inside the directory where docker-compose.yml file is present, otherwise it will give error.)
 
 ### How to stop the containers, started using docker-compose?
   In docker compose and we're working with multiple images or multiple containers at the same time. we can close them all at the same time with one single command.
   `docker-compose down`
   It will stop and remove all the containers.
+
 
 
