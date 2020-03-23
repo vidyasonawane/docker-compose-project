@@ -35,5 +35,14 @@ _(NOTE: we can store this number of visits inside the node application itself. T
 
   The purpose of Docker compose is to essentially function as Docker CLI but allow you to issue multiple commands much more quickly.
 
-  Bu using docker compose, Containers have free access to each other and can exchange as much information as they want without having to exchange or open up any ports between the two.
+  Bu using docker compose, Containers have free access to each other and can exchange as much information as they want without having to exchange or open up any ports between the two. Hence after using the docker compose, the first line will be `Creating network "docker-compose-project_default" with the default driver` 
+
+* To build and run the container using docker compose, use
+  `docker-compose up`
+
+### How to stop the containers, started using docker-compose?
+  In docker compose and we're working with multiple images or multiple containers at the same time. we can close them all at the same time with one single command.
+  `docker-compose down`
+  It will stop and remove all the containers.
+
 
