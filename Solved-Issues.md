@@ -24,7 +24,8 @@ at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)`
     how to deal with containers that crash for some given reason and How to essentially restart a container when the software inside of it has an air of some sort to get started.
 
     Specifying restart policies inside of dockerr compose file.
-        1.  "no" : By default we have the no restart policy assigned to all of our containers. The no restart policy means if this thing crashes for any reason do not attempt to restart the container. ( you specifically have to put it in quotes either double or single. In a YAML file, it gets interpreted as false without quotes.)
+    
+        1.  "no": By default we have the no restart policy assigned to all of our containers. The no restart policy means if this thing crashes for any reason do not attempt to restart the container. ( you specifically have to put it in quotes either double or single. In a YAML file, it gets interpreted as false without quotes.)
         
         2.  always: if the container stops for absolutely any reason whatsoever automatically attempt to restart it.
 
